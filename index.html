@@ -1,0 +1,223 @@
+<html>
+  <head>
+    <style>
+      #p {
+          color: white;
+          font-size: 130px;
+      }
+      .gg {
+          display: grid;
+          position: sticky;
+          top: 20px;
+          grid-template-columns: repeat(50, 1fr);
+          grid-template-rows: 60px;
+          z-index: 2;
+      }
+      .g1 {
+          display: grid;
+          position: relative;
+          top: 100px;
+          grid-template-columns: 1fr 1050px 1fr;
+          grid-template-rows: 1;
+      }
+      .g2 {
+          display: grid;
+          position: relative;
+          top: 200px;
+          grid-template-columns: repeat(50, 1fr);
+          grid-template-rows: repeat(30, 25px);
+          z-index: 1;
+      }
+      .g3 {
+          display: grid;
+          position: relative;
+          top: 300px;
+          grid-template-columns: 1fr;
+          grid-template-rows: 75px 75px;
+          z-index: 1;
+      }
+      body {
+	      background-image: url(pexels-bess-hamiti-36487.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+      }
+      .shape {
+          #height: 40px; 
+          clip-path: inset(100% 100%);
+          background: #6e88a1;
+	        border-radius: 10px;
+        grid-column-start: 1;
+        grid-column-end: span 50;
+        grid-row-start: 1;
+        z-index: 2;
+        margin: 0px;
+          #left: 40px;
+      }
+      .test,.test2,.test3 {
+        text-align: center;
+        font-size: 18px;
+        font-family: "waree","Font Awesome 6 Free Solid";
+	      #margin-top: 6px;
+	      margin-left: 8px;
+	      padding-left: 10px;
+	      padding-right: 10px;
+	      #margin-bottom: 0px;
+	      border-radius: 10px;
+	      color: #fffff7;
+	      background: linear-gradient(#2f0d28, #66234c);
+        width: fit-content;
+        #background-position: center;
+        #background-position: top;
+        background-origin: padding-box;
+        box-shadow: 2px 5px 5px teal;
+        place-self: center;
+        #left: 40px;
+        transition-property: background color;
+        transition-duration: .5s;
+        z-index: 3;
+      }
+      .test3 {  
+        grid-column-start: 36;
+        grid-column-end: span 50;
+        grid-row-start: 1;
+      }
+      .test2 {
+        grid-column-start: 44;
+        grid-column-end: span 50;
+        grid-row-start: 1;
+      }
+      .test {
+        grid-column-start: 2;
+        grid-row-start: 1;
+      }
+      .test:hover,  .test2:hover, .test3:hover{
+          background: #fffff7;
+          color: #000000;
+      }
+      .test-main {
+        font-size: 150px;
+        color: #0b0f18;
+        text-align: center;
+        background: rgba(255,255,255,.63);
+        grid-column-start: 2;
+      }
+      .test-main2 {
+        font-size: 100px;
+        color: #0b0f18;
+        text-align: center;
+        background: #bbd0e1;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-column-end: span 50;
+        grid-row-end: span 30;
+	      border-radius: 10px;
+        transition-property: background color;
+        transition-duration: .5s;
+          z-index: 1;
+      }
+      .test-main2:hover {
+          background: #fffff7;
+          color: #000000;
+      }
+      .image1 {
+          object-fit: contain;
+          height: 100%;
+          width: 100%;
+          grid-column-start: 3;
+          grid-column-end: 14;
+          grid-row-start: 10;
+          grid-row-end: 18;
+          z-index: 2;
+        background-origin: padding-box;
+        box-shadow: 2px 5px 5px teal;
+      }
+      .image2 {
+          object-fit: contain;
+          height: 100%;
+          width: 100%;
+          grid-column-start: 3;
+          grid-column-end: 14;
+          grid-row-start: 20;
+          grid-row-end: 28;
+          z-index: 2;
+        background-origin: padding-box;
+        box-shadow: 2px 5px 5px teal;
+      }
+      .text1 {
+          font-family: "caladea";
+          font-size: 40px;
+          color: #000033;
+          grid-column-start: 18;
+          grid-column-end: 50;
+          grid-row-start: 10;
+          grid-row-end: 15;
+          z-index: 2;
+      }
+      .text2 {
+          font-family: "caladea";
+          font-size: 40px;
+          color: #000033;
+          grid-column-start: 18;
+          grid-column-end: 50;
+          grid-row-start: 20;
+          grid-row-end: 25;
+          z-index: 2;
+      }
+      .ending {  
+          #clip-path: inset(100% 100%);
+          background: linear-gradient( #1e0d1f, #242b3b);
+	        border-radius: 10px;
+        grid-column-start: 1;
+        grid-column-end: span 1;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+        z-index: auto;
+        margin: 0px;
+      }
+      .author {
+          color: #ffffff;
+          font-size: 50px;
+          font-family: "Source Code Pro";
+        text-align: center;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        z-index: 5;
+      }
+      .name {
+          color: #ffffff;
+          margin: 15px;
+          font-size: 50px;
+          font-family: "Z003";
+        text-align: center;
+        grid-column-start: 1;
+        grid-row-start: 2;
+        z-index: 5;
+      }
+    </style>
+    <title>Html</title>
+  </head>
+  <body>
+    <div class="gg">
+      <div class="test"></div>
+      <div class="test2">Wana Join?</div>
+      <div class="test3">FAQ</div>
+      <div class="shape"></div>
+    </div>
+    <div class="g1">
+      <div class="test-main">The Place Of Initiatives</div>
+    </div>
+    <div class="g2">
+      <div class="test-main2">What Are We</div>
+      <img class="image1" src="./pexels-fauxels-3183150.jpg"></img>
+      <div class="text1">We work with you for the best outcome</div>
+      <img class="image2" src="./E59.jpg"></img>
+      <div class="text2">Our ideas are revolutionary for startups</div>
+    </div>
+    <div class="g3">
+      <div class="ending"></div>
+      <div class="author">Author:</div>
+      <div class="name">Sifat Tahsin Azad</div>
+    </div>
+  </body>
+</html>
